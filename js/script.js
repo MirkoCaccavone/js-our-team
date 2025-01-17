@@ -60,13 +60,13 @@ for (let i = 0; i < teamMembers.length; i++){
             </div>
             
             <div id="subContainerRight">
-                <h3 class="name">
+                <h3>
                 ${name}
                 </h3>
-                <div class="role">
+                <div>
                     ${role}
                 </div>
-                <a href="#" class="email">
+                <a href="#">
                     ${email}
                 </a>
             </div>
