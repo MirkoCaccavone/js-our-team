@@ -36,3 +36,45 @@ const teamMembers = [
     img: "img/female3.png"
   }
 ];
+
+// variabile che richiama il contenitore
+const teamComplete = document.getElementById('container');
+
+// variabile vuota per inserire tutti gli oggetti
+let membersData = '';
+
+// ciclo per recuperare i singoli oggetti
+for (let i = 0; i < teamMembers.length; i++){
+
+  memberIesimo = teamMembers[i];
+  // console.log(memberIesimo);
+
+  const {name, role, email, img} = memberIesimo;
+  // console.log(name, role, email, img);
+
+
+  membersData += `
+    <div id="card">
+            <div id="subContainerLeft">
+                <img src="${img}" alt="${name}" class="img">
+            </div>
+            
+            <div id="subContainerRight">
+                <h3 class="name">
+                ${name}
+                </h3>
+                <div class="role">
+                    ${role}
+                </div>
+                <a href="#" class="email">
+                    ${email}
+                </a>
+            </div>
+        </div>
+  `
+// console.log(membersData);
+};
+
+teamComplete.innerHTML = membersData;
+
+
