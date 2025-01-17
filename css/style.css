@@ -37,8 +37,12 @@ main{
     margin-right: 20px;
 }
 
-#subContainerRight{
-    align-content: center;
+#subContainerRight > h3{
+    margin: 10px 0;
+}
+
+#subContainerRight > div{
+    margin: 5px 0;
 }
 
 .img{
